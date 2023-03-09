@@ -2,52 +2,75 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Simple Selectors</title>
+<title>Pseudo Class Selectors</title>
 <style>
-
-/* all h2 elements */
-xxx {
-  color: red;
-  text-align: center;
+/* Styles go here. */
+header li {
+    list-style: none;
+}
+a:link, a:visited {
+    text-decoration: none;
+    background-color: green;
+    border: 1px solid blue;
+    color: black;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+a:hover, a:active {
+    background-color: red;
+    color: purple;
 }
 
-
-/* all with class="highlight" */
-xxx {
-  font-size: 20px;
-  font-weight: bold;
-  font-style: italic;
-  background-color: green;
-  opacity: .6;
+header li:nth-child(3) {
+    font-size: 20px;
 }
 
-/* element with id="mainPoint" */
-xxx {
-  font-size: 24px;
-  font-weight: bold;
-  background-color: red;
-  opacity: .7;
+section div:nth-child(odd) {
+    background-color: grey;
 }
 
-/* all p AND h1 elements */
-xxx {
-  color: blue;
-  text-align: center;
+section div:nth-child(4):hover {
+    background-color: green;
+    cursor: pointer;
 }
 
 </style>
 </head>
 <body>
+<h1>Pseudo Class Selectors</h1>
 
-<h1>Simple Selectors (h1)</h1>
-<h2>Subheading 1 (h2)</h2>
-<p class="highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet alias est? Nobis cum quasi at soluta odit, maiores quaerat dolores expedita ex nemo ea repellendus dolorem sed maxime quos?</p>
-<p class="highlight">Paragraph with attribute class="highlight". Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-<h2>Subheading 2 (h2)</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nemo ipsum dolores vel modi magnam veniam alias at nam. Voluptatem officiis dolor dolorem aspernatur dolorum modi ipsa, nobis animi aut!</p>
-<div>This is the main point of the entire article. So, attribute 
-<span id="mainPoint">id="mainPoint".</span> </div>
+<header>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="http://goo.gl/V0Wl6s" target="_blank">AngularJS Course</a></li>
+    <li><a href="http://www.facebook.com/CourseraWebDev" target="_blank">Facebook Fan Page</a></li>
+  </ul>
+</header>
+
+<section>
+  <div>DIV 1</div>
+  <div>DIV 2</div>
+  <div>DIV 3</div>
+  <div>DIV 4</div>
+  <div>DIV 5</div>
+  <div>DIV 6</div>
+  <div>DIV 7</div>
+  <div>DIV 8</div>
+  <div>DIV 9</div>
+  <div>DIV 10</div>
+  <div>DIV 11</div>
+  <div>DIV 12</div>
+  <div>DIV 13</div>
+  <div>DIV 14</div>
+  <div>DIV 15</div>
+  <div>DIV 16</div>
+  <div>DIV 17</div>
+  <div>DIV 18</div>
+  <div>DIV 19</div>
+  <div>DIV 20</div>
+</section>
 
 </body>
 </html>
-
