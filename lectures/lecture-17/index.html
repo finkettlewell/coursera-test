@@ -2,49 +2,20 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>The Box Model</title>
+<title>Background</title>
 <style>
-
-
-body {
-    margin: 0;
-    padding: 0;
-  background-color: gray;
-  box-sizing: border-box;
-}
-* {
-    box-sizing: border-box;
-}
-
-#box {
+#bg {
+  width: 500px;
+  height: 500px;
   background-color: blue;
-  padding: 10px;
-  border: 7px dashed black;
-  margin: 40px;
-  width: 300px;
-}
-
-#content {
-  background-color: #90EE90; /*green*/
-}
-
-h1 {
-  margin-bottom: 30px;
+  background-image: url("yaakov.png");
 }
 
 </style>
 </head>
 <body>
+<h1>The Background Property</h1>
 
-<h1>Box Model</h1>
-
-<div id="box">
-  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
-</div>
-
-
+<div id="bg">Background properties are fun!</div>
 </body>
 </html>
-
-
-
